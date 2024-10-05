@@ -13,11 +13,32 @@ namespace ProyectosAPI.Models
         public DbSet<Equipo> Equipos { get; set; }
         public DbSet<Proyecto> Proyectos { get; set; }
         public DbSet<Tarea> Tareas { get; set; }
+        public DbSet<EstadoTareas> EstadoTareas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
             base.OnModelCreating(modelBuilder);
+
+            // Siembra de datos para la tabla EstadoTareas
+
+            modelBuilder.Entity<EstadoTareas>().HasData(
+                new EstadoTareas
+                {
+                    Id = 1,
+                    Nombre = "Pendiente"
+                },
+                new EstadoTareas
+                {
+                    Id = 2,
+                    Nombre = "En Progreso"
+                },
+                new EstadoTareas
+                {
+                    Id = 3,
+                    Nombre = "Completada"
+                }
+            );
 
             // Siembra de datos para la tabla Equipos
 
@@ -148,7 +169,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 1,
                     Descripcion = "Planificación inicial",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 1,
                     
                 },
@@ -156,7 +177,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 2,
                     Descripcion = "Desarrollo de prototipos",
-                    Estado = 2,
+                    EstadoId = 2,
                     ProyectoId = 1,
 
                 },
@@ -164,21 +185,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 3,
                     Descripcion = "Implementación de módulos",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 1,
                 },
                 new Tarea
                 {
                     Id = 4,
                     Descripcion = "Pruebas de integración",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 1,
                 },
                 new Tarea
                 {
                     Id = 5,
                     Descripcion = "Despliegue inicial",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 1,
                 }
             );
@@ -190,7 +211,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 6,
                     Descripcion = "Recolección de requerimientos",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 2,
 
                 },
@@ -198,7 +219,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 7,
                     Descripcion = "Diseño del sistema",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 2,
 
                 },
@@ -206,21 +227,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 8,
                     Descripcion = "Configuración de servidores",
-                    Estado = 2,
+                    EstadoId = 2,
                     ProyectoId = 2,
                 },
                 new Tarea
                 {
                     Id = 9,
                     Descripcion = "Pruebas de rendimiento",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 2,
                 },
                 new Tarea
                 {
                     Id = 10,
                     Descripcion = "Lanzamiento del sistema",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 2,
                 }
             );
@@ -232,7 +253,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 11,
                     Descripcion = "Evaluación de la plataforma actual",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 3,
 
                 },
@@ -240,7 +261,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 12,
                     Descripcion = "Planificación de migración",
-                    Estado = 2,
+                    EstadoId = 2,
                     ProyectoId = 3,
 
                 },
@@ -248,21 +269,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 13,
                     Descripcion = "Implementación del nuevo sistema",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 3,
                 },
                 new Tarea
                 {
                     Id = 14,
                     Descripcion = "Transferencia de datos",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 3,
                 },
                 new Tarea
                 {
                     Id = 15,
                     Descripcion = "Pruebas finales",
-                    Estado = 1,
+                    EstadoId = 1,
                     ProyectoId = 3,
                 }
             );

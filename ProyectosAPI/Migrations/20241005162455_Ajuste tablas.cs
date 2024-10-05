@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProyectosAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class MigracionInicial : Migration
+    public partial class Ajustetablas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -64,6 +64,19 @@ namespace ProyectosAPI.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Equipos", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "EstadoTareas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EstadoTareas", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -201,12 +214,18 @@ namespace ProyectosAPI.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Estado = table.Column<int>(type: "int", nullable: false),
-                    ProyectoId = table.Column<int>(type: "int", nullable: true)
+                    EstadoId = table.Column<int>(type: "int", nullable: true),
+                    ProyectoId = table.Column<int>(type: "int", nullable: true),
+                    EstadoTareasId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Tareas", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Tareas_EstadoTareas_EstadoTareasId",
+                        column: x => x.EstadoTareasId,
+                        principalTable: "EstadoTareas",
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Tareas_Proyectos_ProyectoId",
                         column: x => x.ProyectoId,
@@ -222,6 +241,16 @@ namespace ProyectosAPI.Migrations
                     { 1, "Equipo encargado de la programación y desarrollo de software.", "Desarrollo" },
                     { 2, "Equipo encargado del diseño gráfico y experiencia de usuario.", "Diseño" },
                     { 3, "Equipo encargado de la infraestructura y soporte operativo.", "Operaciones" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "EstadoTareas",
+                columns: new[] { "Id", "Nombre" },
+                values: new object[,]
+                {
+                    { 1, "Pendiente" },
+                    { 2, "En Progreso" },
+                    { 3, "Completada" }
                 });
 
             migrationBuilder.InsertData(
@@ -243,24 +272,24 @@ namespace ProyectosAPI.Migrations
 
             migrationBuilder.InsertData(
                 table: "Tareas",
-                columns: new[] { "Id", "Descripcion", "Estado", "ProyectoId" },
+                columns: new[] { "Id", "Descripcion", "EstadoId", "EstadoTareasId", "ProyectoId" },
                 values: new object[,]
                 {
-                    { 1, "Planificación inicial", 1, 1 },
-                    { 2, "Desarrollo de prototipos", 2, 1 },
-                    { 3, "Implementación de módulos", 1, 1 },
-                    { 4, "Pruebas de integración", 1, 1 },
-                    { 5, "Despliegue inicial", 1, 1 },
-                    { 6, "Recolección de requerimientos", 1, 2 },
-                    { 7, "Diseño del sistema", 1, 2 },
-                    { 8, "Configuración de servidores", 2, 2 },
-                    { 9, "Pruebas de rendimiento", 1, 2 },
-                    { 10, "Lanzamiento del sistema", 1, 2 },
-                    { 11, "Evaluación de la plataforma actual", 1, 3 },
-                    { 12, "Planificación de migración", 2, 3 },
-                    { 13, "Implementación del nuevo sistema", 1, 3 },
-                    { 14, "Transferencia de datos", 1, 3 },
-                    { 15, "Pruebas finales", 1, 3 }
+                    { 1, "Planificación inicial", 1, null, 1 },
+                    { 2, "Desarrollo de prototipos", 2, null, 1 },
+                    { 3, "Implementación de módulos", 1, null, 1 },
+                    { 4, "Pruebas de integración", 1, null, 1 },
+                    { 5, "Despliegue inicial", 1, null, 1 },
+                    { 6, "Recolección de requerimientos", 1, null, 2 },
+                    { 7, "Diseño del sistema", 1, null, 2 },
+                    { 8, "Configuración de servidores", 2, null, 2 },
+                    { 9, "Pruebas de rendimiento", 1, null, 2 },
+                    { 10, "Lanzamiento del sistema", 1, null, 2 },
+                    { 11, "Evaluación de la plataforma actual", 1, null, 3 },
+                    { 12, "Planificación de migración", 2, null, 3 },
+                    { 13, "Implementación del nuevo sistema", 1, null, 3 },
+                    { 14, "Transferencia de datos", 1, null, 3 },
+                    { 15, "Pruebas finales", 1, null, 3 }
                 });
 
             migrationBuilder.CreateIndex(
@@ -308,6 +337,11 @@ namespace ProyectosAPI.Migrations
                 column: "EquipoId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Tareas_EstadoTareasId",
+                table: "Tareas",
+                column: "EstadoTareasId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Tareas_ProyectoId",
                 table: "Tareas",
                 column: "ProyectoId");
@@ -339,6 +373,9 @@ namespace ProyectosAPI.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "EstadoTareas");
 
             migrationBuilder.DropTable(
                 name: "Proyectos");

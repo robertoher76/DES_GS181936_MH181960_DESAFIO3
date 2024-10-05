@@ -10,11 +10,11 @@ namespace ProyectosAPI.Models
         [Required]
         public string Descripcion { get; set; } = string.Empty;
 
-        [Required]
-        public int Estado { get; set; }
+        public int? EstadoId { get; set; }
 
         public int? ProyectoId { get; set; }
 
         public Proyecto? Proyecto { get; set; }
+        public EstadoTareas? EstadoTareas { get; set; }
     }
 }

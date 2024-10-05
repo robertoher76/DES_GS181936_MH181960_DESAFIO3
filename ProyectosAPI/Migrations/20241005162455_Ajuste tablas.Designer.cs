@@ -12,8 +12,8 @@ using ProyectosAPI.Models;
 namespace ProyectosAPI.Migrations
 {
     [DbContext(typeof(ProyectoContext))]
-    [Migration("20241005040052_Migracion Inicial")]
-    partial class MigracionInicial
+    [Migration("20241005162455_Ajuste tablas")]
+    partial class Ajustetablas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -199,6 +199,40 @@ namespace ProyectosAPI.Migrations
                         });
                 });
 
+            modelBuilder.Entity("ProyectosAPI.Models.EstadoTareas", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EstadoTareas");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nombre = "Pendiente"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nombre = "En Progreso"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nombre = "Completada"
+                        });
+                });
+
             modelBuilder.Entity("ProyectosAPI.Models.Proyecto", b =>
                 {
                     b.Property<int>("Id")
@@ -322,13 +356,18 @@ namespace ProyectosAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Estado")
+                    b.Property<int?>("EstadoId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("EstadoTareasId")
                         .HasColumnType("int");
 
                     b.Property<int?>("ProyectoId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EstadoTareasId");
 
                     b.HasIndex("ProyectoId");
 
@@ -339,105 +378,105 @@ namespace ProyectosAPI.Migrations
                         {
                             Id = 1,
                             Descripcion = "Planificación inicial",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 1
                         },
                         new
                         {
                             Id = 2,
                             Descripcion = "Desarrollo de prototipos",
-                            Estado = 2,
+                            EstadoId = 2,
                             ProyectoId = 1
                         },
                         new
                         {
                             Id = 3,
                             Descripcion = "Implementación de módulos",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 1
                         },
                         new
                         {
                             Id = 4,
                             Descripcion = "Pruebas de integración",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 1
                         },
                         new
                         {
                             Id = 5,
                             Descripcion = "Despliegue inicial",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 1
                         },
                         new
                         {
                             Id = 6,
                             Descripcion = "Recolección de requerimientos",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 2
                         },
                         new
                         {
                             Id = 7,
                             Descripcion = "Diseño del sistema",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 2
                         },
                         new
                         {
                             Id = 8,
                             Descripcion = "Configuración de servidores",
-                            Estado = 2,
+                            EstadoId = 2,
                             ProyectoId = 2
                         },
                         new
                         {
                             Id = 9,
                             Descripcion = "Pruebas de rendimiento",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 2
                         },
                         new
                         {
                             Id = 10,
                             Descripcion = "Lanzamiento del sistema",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 2
                         },
                         new
                         {
                             Id = 11,
                             Descripcion = "Evaluación de la plataforma actual",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 3
                         },
                         new
                         {
                             Id = 12,
                             Descripcion = "Planificación de migración",
-                            Estado = 2,
+                            EstadoId = 2,
                             ProyectoId = 3
                         },
                         new
                         {
                             Id = 13,
                             Descripcion = "Implementación del nuevo sistema",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 3
                         },
                         new
                         {
                             Id = 14,
                             Descripcion = "Transferencia de datos",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 3
                         },
                         new
                         {
                             Id = 15,
                             Descripcion = "Pruebas finales",
-                            Estado = 1,
+                            EstadoId = 1,
                             ProyectoId = 3
                         });
                 });
@@ -571,9 +610,15 @@ namespace ProyectosAPI.Migrations
 
             modelBuilder.Entity("ProyectosAPI.Models.Tarea", b =>
                 {
+                    b.HasOne("ProyectosAPI.Models.EstadoTareas", "EstadoTareas")
+                        .WithMany()
+                        .HasForeignKey("EstadoTareasId");
+
                     b.HasOne("ProyectosAPI.Models.Proyecto", "Proyecto")
                         .WithMany()
                         .HasForeignKey("ProyectoId");
+
+                    b.Navigation("EstadoTareas");
 
                     b.Navigation("Proyecto");
                 });
