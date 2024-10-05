@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProyectosAPI.Models
 {
-    public class ProyectoContext : DbContext
+    public class ProyectoContext : IdentityDbContext<Usuario>
     {
         public ProyectoContext(DbContextOptions<ProyectoContext> options) : base(options)
         {

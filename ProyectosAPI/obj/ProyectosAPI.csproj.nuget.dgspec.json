@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj": {}
+    "C:\\Users\\JGS\\Documents\\GitHub\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj": {
+    "C:\\Users\\JGS\\Documents\\GitHub\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj",
+        "projectUniqueName": "C:\\Users\\JGS\\Documents\\GitHub\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj",
         "projectName": "ProyectosAPI",
-        "projectPath": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj",
-        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\obj\\",
+        "projectPath": "C:\\Users\\JGS\\Documents\\GitHub\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj",
+        "packagesPath": "C:\\Users\\JGS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JGS\\Documents\\GitHub\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JGS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -84,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
