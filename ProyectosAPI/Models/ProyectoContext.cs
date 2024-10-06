@@ -169,7 +169,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 1,
                     Descripcion = "Planificación inicial",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 1,
                     
                 },
@@ -177,7 +177,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 2,
                     Descripcion = "Desarrollo de prototipos",
-                    EstadoId = 2,
+                    EstadoTareasId = 2,
                     ProyectoId = 1,
 
                 },
@@ -185,21 +185,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 3,
                     Descripcion = "Implementación de módulos",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 1,
                 },
                 new Tarea
                 {
                     Id = 4,
                     Descripcion = "Pruebas de integración",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 1,
                 },
                 new Tarea
                 {
                     Id = 5,
                     Descripcion = "Despliegue inicial",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 1,
                 }
             );
@@ -211,7 +211,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 6,
                     Descripcion = "Recolección de requerimientos",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 2,
 
                 },
@@ -219,7 +219,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 7,
                     Descripcion = "Diseño del sistema",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 2,
 
                 },
@@ -227,21 +227,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 8,
                     Descripcion = "Configuración de servidores",
-                    EstadoId = 2,
+                    EstadoTareasId = 2,
                     ProyectoId = 2,
                 },
                 new Tarea
                 {
                     Id = 9,
                     Descripcion = "Pruebas de rendimiento",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 2,
                 },
                 new Tarea
                 {
                     Id = 10,
                     Descripcion = "Lanzamiento del sistema",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 2,
                 }
             );
@@ -253,7 +253,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 11,
                     Descripcion = "Evaluación de la plataforma actual",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 3,
 
                 },
@@ -261,7 +261,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 12,
                     Descripcion = "Planificación de migración",
-                    EstadoId = 2,
+                    EstadoTareasId = 2,
                     ProyectoId = 3,
 
                 },
@@ -269,21 +269,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 13,
                     Descripcion = "Implementación del nuevo sistema",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 3,
                 },
                 new Tarea
                 {
                     Id = 14,
                     Descripcion = "Transferencia de datos",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 3,
                 },
                 new Tarea
                 {
                     Id = 15,
                     Descripcion = "Pruebas finales",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 3,
                 }
             );
@@ -295,7 +295,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 16,
                     Descripcion = "Investigación de usuario",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 4,
 
                 },
@@ -303,7 +303,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 17,
                     Descripcion = "Creación de wireframes",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 4,
 
                 },
@@ -311,21 +311,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 18,
                     Descripcion = "Diseño de interfaz de usuario",
-                    EstadoId = 2,
+                    EstadoTareasId = 2,
                     ProyectoId = 4,
                 },
                 new Tarea
                 {
                     Id = 19,
                     Descripcion = "Implementación de prototipos",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 4,
                 },
                 new Tarea
                 {
                     Id = 20,
                     Descripcion = "Pruebas de usabilidad",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 4,
                 }
             );
@@ -337,7 +337,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 21,
                     Descripcion = "Desarrollo de conceptos",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 5,
 
                 },
@@ -345,7 +345,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 22,
                     Descripcion = "Diseño de logo",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 5,
 
                 },
@@ -353,21 +353,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 23,
                     Descripcion = "Creación de guías de estilo",
-                    EstadoId = 2,
+                    EstadoTareasId = 2,
                     ProyectoId = 5,
                 },
                 new Tarea
                 {
                     Id = 24,
                     Descripcion = "Elaboración de material promocional",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 5,
                 },
                 new Tarea
                 {
                     Id = 25,
                     Descripcion = "Presentación al cliente",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 5,
                 }
             );
@@ -379,7 +379,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 26,
                     Descripcion = "Diseño de pantallas",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 6,
 
                 },
@@ -387,7 +387,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 27,
                     Descripcion = "Creación de iconografía",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 6,
 
                 },
@@ -395,21 +395,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 28,
                     Descripcion = "Pruebas de diseño",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 6,
                 },
                 new Tarea
                 {
                     Id = 29,
                     Descripcion = "Adaptación a diferentes dispositivos",
-                    EstadoId = 2,
+                    EstadoTareasId = 2,
                     ProyectoId = 6,
                 },
                 new Tarea
                 {
                     Id = 30,
                     Descripcion = "Revisión final de diseño",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 6,
                 }
             );
@@ -421,7 +421,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 31,
                     Descripcion = "Auditoría de infraestructura",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 7,
 
                 },
@@ -429,7 +429,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 32,
                     Descripcion = "Revisión de configuraciones actuales",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 7,
 
                 },
@@ -437,21 +437,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 33,
                     Descripcion = "Implementación de mejoras",
-                    EstadoId = 2,
+                    EstadoTareasId = 2,
                     ProyectoId = 7,
                 },
                 new Tarea
                 {
                     Id = 34,
                     Descripcion = "Pruebas de conectividad",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 7,
                 },
                 new Tarea
                 {
                     Id = 35,
                     Descripcion = "Documentación de cambios",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 7,
                 }
             );
@@ -463,7 +463,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 36,
                     Descripcion = "Configuración de herramientas",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 8,
 
                 },
@@ -471,7 +471,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 37,
                     Descripcion = "Desarrollo de scripts de automatización",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 8,
 
                 },
@@ -479,21 +479,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 38,
                     Descripcion = "Pruebas de integración",
-                    EstadoId = 2,
+                    EstadoTareasId = 2,
                     ProyectoId = 8,
                 },
                 new Tarea
                 {
                     Id = 39,
                     Descripcion = "Documentación del proceso",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 8,
                 },
                 new Tarea
                 {
                     Id = 40,
                     Descripcion = "Implementación en producción",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 8,
                 }
             );
@@ -505,7 +505,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 41,
                     Descripcion = "Selección de plataforma",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 9,
 
                 },
@@ -513,7 +513,7 @@ namespace ProyectosAPI.Models
                 {
                     Id = 42,
                     Descripcion = "Planificación de migración",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 9,
 
                 },
@@ -521,21 +521,21 @@ namespace ProyectosAPI.Models
                 {
                     Id = 43,
                     Descripcion = "Transferencia de datos",
-                    EstadoId = 2,
+                    EstadoTareasId = 2,
                     ProyectoId = 9,
                 },
                 new Tarea
                 {
                     Id = 44,
                     Descripcion = "Configuración de seguridad",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 9,
                 },
                 new Tarea
                 {
                     Id = 45,
                     Descripcion = "Pruebas y ajustes finales",
-                    EstadoId = 1,
+                    EstadoTareasId = 1,
                     ProyectoId = 9,
                 }
             );
