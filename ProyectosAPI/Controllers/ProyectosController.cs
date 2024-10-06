@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +23,7 @@ namespace ProyectosAPI.Controllers
 
         // GET: api/Proyectos
         [HttpGet]
+        [Authorize(Roles = "Administrador,Usuario")]
         public async Task<ActionResult<IEnumerable<Proyecto>>> GetProyectos()
         {
             return await _context.Proyectos.ToListAsync();
@@ -29,6 +31,7 @@ namespace ProyectosAPI.Controllers
 
         // GET: api/Proyectos/5
         [HttpGet("{id}")]
+        [Authorize(Roles = "Administrador,Usuario")]
         public async Task<ActionResult<Proyecto>> GetProyecto(int id)
         {
             var proyecto = await _context.Proyectos.FindAsync(id);
@@ -44,6 +47,7 @@ namespace ProyectosAPI.Controllers
         // PUT: api/Proyectos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> PutProyecto(int id, Proyecto proyecto)
         {
             if (id != proyecto.Id)
@@ -75,6 +79,7 @@ namespace ProyectosAPI.Controllers
         // POST: api/Proyectos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize(Roles = "Administrador")]
         public async Task<ActionResult<Proyecto>> PostProyecto(Proyecto proyecto)
         {
             _context.Proyectos.Add(proyecto);
@@ -85,6 +90,7 @@ namespace ProyectosAPI.Controllers
 
         // DELETE: api/Proyectos/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> DeleteProyecto(int id)
         {
             var proyecto = await _context.Proyectos.FindAsync(id);

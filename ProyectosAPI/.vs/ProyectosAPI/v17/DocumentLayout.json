@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|c:\\users\\rober\\desktop\\des_gs181936_mh181960_desafio3\\proyectosapi\\models\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|solutionrelative:models\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|c:\\users\\rober\\desktop\\des_gs181936_mh181960_desafio3\\proyectosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|c:\\users\\rober\\desktop\\des_gs181936_mh181960_desafio3\\proyectosapi\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|solutionrelative:models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|c:\\users\\rober\\desktop\\des_gs181936_mh181960_desafio3\\proyectosapi\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|solutionrelative:controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|c:\\users\\rober\\desktop\\des_gs181936_mh181960_desafio3\\proyectosapi\\models\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|solutionrelative:models\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|c:\\users\\rober\\desktop\\des_gs181936_mh181960_desafio3\\proyectosapi\\models\\proyectocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|solutionrelative:models\\proyectocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|c:\\users\\rober\\desktop\\des_gs181936_mh181960_desafio3\\proyectosapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8911FEAB-26E0-497E-8FF1-E5AF5E65D5C5}|ProyectosAPI.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,50 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Tarea.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\Tarea.cs",
-              "RelativeDocumentMoniker": "Models\\Tarea.cs",
-              "ToolTip": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\Tarea.cs",
-              "RelativeToolTip": "Models\\Tarea.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T03:49:56.632Z",
+              "WhenOpened": "2024-10-05T23:35:35.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Proyecto.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\Proyecto.cs",
-              "RelativeDocumentMoniker": "Models\\Proyecto.cs",
-              "ToolTip": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\Proyecto.cs",
-              "RelativeToolTip": "Models\\Proyecto.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBEAAAAAAAAA",
+              "Title": "ProyectoContext.cs",
+              "DocumentMoniker": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\ProyectoContext.cs",
+              "RelativeDocumentMoniker": "Models\\ProyectoContext.cs",
+              "ToolTip": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\ProyectoContext.cs",
+              "RelativeToolTip": "Models\\ProyectoContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T03:48:09.392Z",
+              "WhenOpened": "2024-10-05T23:35:17.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Equipo.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\Equipo.cs",
-              "RelativeDocumentMoniker": "Models\\Equipo.cs",
-              "ToolTip": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Models\\Equipo.cs",
-              "RelativeToolTip": "Models\\Equipo.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAqwA4AAAASAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFMAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T03:46:39.709Z",
+              "WhenOpened": "2024-10-05T23:25:20.551Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EquiposController.cs",
+              "DocumentMoniker": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Controllers\\EquiposController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EquiposController.cs",
+              "ToolTip": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\Controllers\\EquiposController.cs",
+              "RelativeToolTip": "Controllers\\EquiposController.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAcwFwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T23:23:40.114Z",
+              "EditorCaption": ""
             }
           ]
         }
