@@ -287,6 +287,258 @@ namespace ProyectosAPI.Models
                     ProyectoId = 3,
                 }
             );
+
+            //TAREAS PARA PROYECTO 4
+
+            modelBuilder.Entity<Tarea>().HasData(
+                new Tarea
+                {
+                    Id = 16,
+                    Descripcion = "Investigación de usuario",
+                    EstadoId = 1,
+                    ProyectoId = 4,
+
+                },
+                new Tarea
+                {
+                    Id = 17,
+                    Descripcion = "Creación de wireframes",
+                    EstadoId = 1,
+                    ProyectoId = 4,
+
+                },
+                new Tarea
+                {
+                    Id = 18,
+                    Descripcion = "Diseño de interfaz de usuario",
+                    EstadoId = 2,
+                    ProyectoId = 4,
+                },
+                new Tarea
+                {
+                    Id = 19,
+                    Descripcion = "Implementación de prototipos",
+                    EstadoId = 1,
+                    ProyectoId = 4,
+                },
+                new Tarea
+                {
+                    Id = 20,
+                    Descripcion = "Pruebas de usabilidad",
+                    EstadoId = 1,
+                    ProyectoId = 4,
+                }
+            );
+
+            //TAREAS PARA PROYECTO 5
+
+            modelBuilder.Entity<Tarea>().HasData(
+                new Tarea
+                {
+                    Id = 21,
+                    Descripcion = "Desarrollo de conceptos",
+                    EstadoId = 1,
+                    ProyectoId = 5,
+
+                },
+                new Tarea
+                {
+                    Id = 22,
+                    Descripcion = "Diseño de logo",
+                    EstadoId = 1,
+                    ProyectoId = 5,
+
+                },
+                new Tarea
+                {
+                    Id = 23,
+                    Descripcion = "Creación de guías de estilo",
+                    EstadoId = 2,
+                    ProyectoId = 5,
+                },
+                new Tarea
+                {
+                    Id = 24,
+                    Descripcion = "Elaboración de material promocional",
+                    EstadoId = 1,
+                    ProyectoId = 5,
+                },
+                new Tarea
+                {
+                    Id = 25,
+                    Descripcion = "Presentación al cliente",
+                    EstadoId = 1,
+                    ProyectoId = 5,
+                }
+            );
+
+            //TAREAS PARA PROYECTO 6
+
+            modelBuilder.Entity<Tarea>().HasData(
+                new Tarea
+                {
+                    Id = 26,
+                    Descripcion = "Diseño de pantallas",
+                    EstadoId = 1,
+                    ProyectoId = 6,
+
+                },
+                new Tarea
+                {
+                    Id = 27,
+                    Descripcion = "Creación de iconografía",
+                    EstadoId = 1,
+                    ProyectoId = 6,
+
+                },
+                new Tarea
+                {
+                    Id = 28,
+                    Descripcion = "Pruebas de diseño",
+                    EstadoId = 1,
+                    ProyectoId = 6,
+                },
+                new Tarea
+                {
+                    Id = 29,
+                    Descripcion = "Adaptación a diferentes dispositivos",
+                    EstadoId = 2,
+                    ProyectoId = 6,
+                },
+                new Tarea
+                {
+                    Id = 30,
+                    Descripcion = "Revisión final de diseño",
+                    EstadoId = 1,
+                    ProyectoId = 6,
+                }
+            );
+
+            //TAREAS PARA PROYECTO 7
+
+            modelBuilder.Entity<Tarea>().HasData(
+                new Tarea
+                {
+                    Id = 31,
+                    Descripcion = "Auditoría de infraestructura",
+                    EstadoId = 1,
+                    ProyectoId = 7,
+
+                },
+                new Tarea
+                {
+                    Id = 32,
+                    Descripcion = "Revisión de configuraciones actuales",
+                    EstadoId = 1,
+                    ProyectoId = 7,
+
+                },
+                new Tarea
+                {
+                    Id = 33,
+                    Descripcion = "Implementación de mejoras",
+                    EstadoId = 2,
+                    ProyectoId = 7,
+                },
+                new Tarea
+                {
+                    Id = 34,
+                    Descripcion = "Pruebas de conectividad",
+                    EstadoId = 1,
+                    ProyectoId = 7,
+                },
+                new Tarea
+                {
+                    Id = 35,
+                    Descripcion = "Documentación de cambios",
+                    EstadoId = 1,
+                    ProyectoId = 7,
+                }
+            );
+
+            //TAREAS PARA PROYECTO 8
+
+            modelBuilder.Entity<Tarea>().HasData(
+                new Tarea
+                {
+                    Id = 36,
+                    Descripcion = "Configuración de herramientas",
+                    EstadoId = 1,
+                    ProyectoId = 8,
+
+                },
+                new Tarea
+                {
+                    Id = 37,
+                    Descripcion = "Desarrollo de scripts de automatización",
+                    EstadoId = 1,
+                    ProyectoId = 8,
+
+                },
+                new Tarea
+                {
+                    Id = 38,
+                    Descripcion = "Pruebas de integración",
+                    EstadoId = 2,
+                    ProyectoId = 8,
+                },
+                new Tarea
+                {
+                    Id = 39,
+                    Descripcion = "Documentación del proceso",
+                    EstadoId = 1,
+                    ProyectoId = 8,
+                },
+                new Tarea
+                {
+                    Id = 40,
+                    Descripcion = "Implementación en producción",
+                    EstadoId = 1,
+                    ProyectoId = 8,
+                }
+            );
+
+            //TAREAS PARA PROYECTO 9
+
+            modelBuilder.Entity<Tarea>().HasData(
+                new Tarea
+                {
+                    Id = 41,
+                    Descripcion = "Selección de plataforma",
+                    EstadoId = 1,
+                    ProyectoId = 9,
+
+                },
+                new Tarea
+                {
+                    Id = 42,
+                    Descripcion = "Planificación de migración",
+                    EstadoId = 1,
+                    ProyectoId = 9,
+
+                },
+                new Tarea
+                {
+                    Id = 43,
+                    Descripcion = "Transferencia de datos",
+                    EstadoId = 2,
+                    ProyectoId = 9,
+                },
+                new Tarea
+                {
+                    Id = 44,
+                    Descripcion = "Configuración de seguridad",
+                    EstadoId = 1,
+                    ProyectoId = 9,
+                },
+                new Tarea
+                {
+                    Id = 45,
+                    Descripcion = "Pruebas y ajustes finales",
+                    EstadoId = 1,
+                    ProyectoId = 9,
+                }
+            );
         }
     }
 }

@@ -4697,19 +4697,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JGS\\.nuget\\packages\\": {}
+    "C:\\Users\\rober\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JGS\\Documents\\GitHub\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj",
+      "projectUniqueName": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj",
       "projectName": "ProyectosAPI",
-      "projectPath": "C:\\Users\\JGS\\Documents\\GitHub\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj",
-      "packagesPath": "C:\\Users\\JGS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JGS\\Documents\\GitHub\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\obj\\",
+      "projectPath": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\ProyectosAPI.csproj",
+      "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rober\\Desktop\\DES_GS181936_MH181960_DESAFIO3\\ProyectosAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JGS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4783,7 +4783,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
